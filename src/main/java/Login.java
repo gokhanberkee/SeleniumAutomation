@@ -79,6 +79,9 @@ public class Login{
             }
          }
          else{
+             WebElement deleteBasket = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[1]/form/div/div[2]/div[2]/div/div/div[6]/div[2]/div[2]/div[1]/div[3]/div/div[2]/div/a"));
+             wait.until(ExpectedConditions.elementToBeClickable((deleteBasket)));
+             deleteBasket.click();
              System.out.println("Test failed since item has discount price.");
              js.executeScript("window.confirm('Test failed since item has discount price.');");
          }

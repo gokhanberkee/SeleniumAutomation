@@ -57,6 +57,6 @@ public class MainTest {
 
     @AfterAll
     public void tearDown(){
-//     driver.quit();
+        driver.quit();
     }
 }
